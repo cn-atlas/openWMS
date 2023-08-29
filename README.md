@@ -101,6 +101,20 @@ http://wms.ichengle.top/
 https://github.com/zccbbg/wms-ruoyi
 
 
+## Usage
+
+### 安装步骤
+
+* 建议创建虚拟环境，不介意的话可以直接安装
+* `pip install -r requirements.txt`
+* `python manage.py createsuperuser`
+* `python manage.py runserver`
+
+### url
+
+* 后台：`http://localhost:8000`
+* api：`http://localhost:8000/api/v1/swagger`
+* doc: `http://localhost:8000/api/v1/docs`
 
 
 Licensing
