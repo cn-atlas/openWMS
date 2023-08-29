@@ -80,11 +80,13 @@ api test: `python manage.py test api`
     由于功能复用，侵入默认权限来决定前端显示范围
 
 
-名称    |  内容类型                    |  代码名称
-Custom | Can View 物料领用路由	auth | 权限	menu_apply
-Custom | Can view 物料路由	auth     | 权限	menu_material
-Custom | Can view 出入库路由	auth     | 权限	menu_wms
-Custom | Can off 入库单	WMS          | 入库单	off_wmsreceiptorder
+| 名称    |  内容类型                    |  代码名称|
+| ------ | ------ | ------ |
+| Custom | Can View 物料领用路由	auth | 权限	menu_apply|
+| Custom | Can view 物料路由	auth     | 权限	menu_material|
+| Custom | Can view 出入库路由	auth     | 权限	menu_wms|
+| Custom | Can off 入库单	WMS          | 入库单	off_wmsreceiptorder|
+
 
 ### Celery 定时任务
 
@@ -97,3 +99,12 @@ celery -A OpenWMS worker --loglevel=debug
 http://wms.ichengle.top/
 
 https://github.com/zccbbg/wms-ruoyi
+
+
+
+
+Licensing
+
+![GPL v3](https://www.gnu.org/graphics/gplv3-with-text-136x68.png)
+
+The source code is licensed under GPL v3. License is available here.

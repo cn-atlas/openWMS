@@ -79,8 +79,7 @@ schema_view = get_schema_view(
         description="openWMS API文档",
         terms_of_service="http://www.precisiongenes.com.cn/",
         contact=openapi.Contact(email="iqinfei@163.com"),
-        license=openapi.License(
-            name="Private License, Only PrecisionGenes Ltd."),
+        license=openapi.License(name="GPL v3"),
     ),
     public=False,
     permission_classes=[permissions.AllowAny],
