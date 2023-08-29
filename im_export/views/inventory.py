@@ -61,4 +61,7 @@ class ExportWmsInventoryHistoryView(APIView):
         return response
 
     class Meta:
+        '''
+        CanExport check permission 会用到 model
+        '''
         model = WmsInventoryHistory

@@ -9,4 +9,4 @@ class CustomAuthenticationForm(AuthenticationForm):
 
 class CustomLoginView(LoginView):
     authentication_form = CustomAuthenticationForm
-    template_name = 'admin/login.html'
+    # template_name = 'admin/login.html'

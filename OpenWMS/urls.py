@@ -33,7 +33,7 @@ urlpatterns = [
 
 if settings.VAPTCHA_IN_ADMIN:
     urlpatterns = [
-        path(r'admin/login/', CustomLoginView.as_view(), name='login'),
+        path(r'admin/login/', CustomLoginView.as_view(template_name='admin/login_with_vaptcha.html'), name='login'),
     ] + urlpatterns
 
 if settings.DEBUG:

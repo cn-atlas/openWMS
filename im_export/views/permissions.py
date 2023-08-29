@@ -11,8 +11,9 @@ class CanExport(BasePermission):
             return True
         if hasattr(view, 'Meta') and hasattr(view.Meta, 'model'):
             model_name = view.Meta.model.__name__
-            permission_codename = "view_" + model_name.lower()
+            app_name = view.Meta.model._meta.app_label
+            permission_codename = app_name + ".view_" + model_name.lower()
             # Check if the user has the permission
-            if request.user.has_perm(model_name + '.' + permission_codename):
+            if request.user.has_perm(permission_codename):
                 return True
         return False
