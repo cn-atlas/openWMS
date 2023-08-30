@@ -79,9 +79,9 @@ api test: `python manage.py test api`
 
 由于前端一些特殊页面/控件有特殊需求，所以在一定情况下还是要侵入默认权限来决定前端菜单/控件显示权限
 
-| 名称    |  内容类型                    |  代码名称| 说明 ｜ 
+| 名称    |  内容类型                    |  代码名称| 说明 |
 | ------ | ------ | ------ | ------ |
-| Custom | Can check 入库单	WMS          | 入库单	check_wmsreceiptorder| 入库单审核权限 ｜
+| Custom | Can check 入库单	WMS          | 入库单	check_wmsreceiptorder| 入库单审核权限 |
 
 
 ### Celery 定时任务
