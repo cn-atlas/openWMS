@@ -77,15 +77,11 @@ api test: `python manage.py test api`
 
 ### 侵入权限
 
-由于功能复用，侵入默认权限来决定前端显示范围
+由于前端一些特殊页面/控件有特殊需求，所以在一定情况下还是要侵入默认权限来决定前端菜单/控件显示权限
 
-
-| 名称    |  内容类型                    |  代码名称|
+| 名称    |  内容类型                    |  代码名称| 说明 ｜ 
 | ------ | ------ | ------ |
-| Custom | Can View 物料领用路由	auth | 权限	menu_apply|
-| Custom | Can view 物料路由	auth     | 权限	menu_material|
-| Custom | Can view 出入库路由	auth     | 权限	menu_wms|
-| Custom | Can off 入库单	WMS          | 入库单	off_wmsreceiptorder|
+| Custom | Can check 入库单	WMS          | 入库单	check_wmsreceiptorder| 入库单审核权限 ｜
 
 
 ### Celery 定时任务
